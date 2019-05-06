@@ -9,10 +9,14 @@ GEN_CMDS__FLAG := -l"configPkg/linker.cmd"
 
 ORDERED_OBJS += \
 "./MSP_EXP432P401R.obj" \
+"./Motor.obj" \
+"./MotorControl.obj" \
 "./buttons.obj" \
 "./heartBeatTask.obj" \
 "./main.obj" \
 "./screenTask.obj" \
+"./sensorTask.obj" \
+"./speedTask.obj" \
 "./LCDDriver/Sharp96x96.obj" \
 "./LCDDriver/Sharp96x96utils.obj" \
 "./fonts/fontcm20b.obj" \
@@ -24,7 +28,7 @@ ORDERED_OBJS += \
 "./grlib/line.obj" \
 "./grlib/rectangle.obj" \
 "./grlib/string.obj" \
-"../msp432p411y.cmd" \
+"../MSP_EXP432P401R.cmd" \
 $(GEN_CMDS__FLAG) \
 -l"/Applications/ti/tirtos_msp43x_2_20_00_06/products/msp432_driverlib_3_21_00_05/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" \
 -llibc.a \
@@ -173,8 +177,8 @@ CSRobot_01.hex: $(EXE_OUTPUTS)
 clean:
 	-$(RM) $(GEN_CMDS__QUOTED)$(GEN_MISC_FILES__QUOTED)$(BIN_OUTPUTS__QUOTED)$(GEN_FILES__QUOTED)$(EXE_OUTPUTS__QUOTED)$(GEN_OPTS__QUOTED)
 	-$(RMDIR) $(GEN_MISC_DIRS__QUOTED)
-	-$(RM) "MSP_EXP432P401R.obj" "buttons.obj" "heartBeatTask.obj" "main.obj" "screenTask.obj" "LCDDriver/Sharp96x96.obj" "LCDDriver/Sharp96x96utils.obj" "fonts/fontcm20b.obj" "fonts/fontcm30b.obj" "fonts/fontcm40b.obj" "grlib/circle.obj" "grlib/context.obj" "grlib/image.obj" "grlib/line.obj" "grlib/rectangle.obj" "grlib/string.obj" 
-	-$(RM) "MSP_EXP432P401R.d" "buttons.d" "heartBeatTask.d" "main.d" "screenTask.d" "LCDDriver/Sharp96x96.d" "LCDDriver/Sharp96x96utils.d" "fonts/fontcm20b.d" "fonts/fontcm30b.d" "fonts/fontcm40b.d" "grlib/circle.d" "grlib/context.d" "grlib/image.d" "grlib/line.d" "grlib/rectangle.d" "grlib/string.d" 
+	-$(RM) "MSP_EXP432P401R.obj" "Motor.obj" "MotorControl.obj" "buttons.obj" "heartBeatTask.obj" "main.obj" "screenTask.obj" "sensorTask.obj" "speedTask.obj" "LCDDriver/Sharp96x96.obj" "LCDDriver/Sharp96x96utils.obj" "fonts/fontcm20b.obj" "fonts/fontcm30b.obj" "fonts/fontcm40b.obj" "grlib/circle.obj" "grlib/context.obj" "grlib/image.obj" "grlib/line.obj" "grlib/rectangle.obj" "grlib/string.obj" 
+	-$(RM) "MSP_EXP432P401R.d" "Motor.d" "MotorControl.d" "buttons.d" "heartBeatTask.d" "main.d" "screenTask.d" "sensorTask.d" "speedTask.d" "LCDDriver/Sharp96x96.d" "LCDDriver/Sharp96x96utils.d" "fonts/fontcm20b.d" "fonts/fontcm30b.d" "fonts/fontcm40b.d" "grlib/circle.d" "grlib/context.d" "grlib/image.d" "grlib/line.d" "grlib/rectangle.d" "grlib/string.d" 
 	-$(RM) "LCDDriver/Sharp96x96utils.d" 
 	-@echo 'Finished clean'
 	-@echo ' '

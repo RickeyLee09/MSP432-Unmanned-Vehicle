@@ -7,5 +7,5 @@
 #       or equal to the generated config header
 #
 linker.cmd: package/cfg/Robot_pem4f.xdl
-	$(SED) 's"^\"\(package/cfg/Robot_pem4fcfg.cmd\)\"$""\"C:/Users/shailes/OneDrive - University College London/Teaching/MScRobotics/Code/CSRobot/2017/CSRobot_01_2017/Debug/configPkg/\1\""' package/cfg/Robot_pem4f.xdl > $@
+	$(SED) 's"^\"\(package/cfg/Robot_pem4fcfg.cmd\)\"$""\"/Users/rickey/CSRobot_01_2017/Debug/configPkg/\1\""' package/cfg/Robot_pem4f.xdl > $@
 	-$(SETDATE) -r:max package/cfg/Robot_pem4f.h compiler.opt compiler.opt.defs

@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'C:/Users/shailes/OneDrive - University College London/Teaching/MScRobotics/Code/CSRobot/2017/CSRobot_01_2017/Robot.cfg',
+        cfgScript: '/Users/rickey/CSRobot_01_2017/Robot.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../Robot.cfg',
-    outputPath: 'C:/Users/shailes/OneDrive - University College London/Teaching/MScRobotics/Code/CSRobot/2017/CSRobot_01_2017/Debug/configPkg',
+    outputPath: '/Users/rickey/CSRobot_01_2017/Debug/configPkg',
     exeName:    'Robot' + suffix,
     exeIntName: 'Robot' + suffix.replace('.', '_'),
     targ:       targ,

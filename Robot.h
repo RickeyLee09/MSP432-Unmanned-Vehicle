@@ -21,11 +21,11 @@ extern "C" {
 
 #define Robot_MotorRIN1f            MSP_EXP432P401R_P6_1
 #define Robot_MotorRIN1r            MSP_EXP432P401R_P4_0
-#define Robot_MotorRIN2f            MSP_EXP432P401R_P4_2
+#define Robot_MotorRIN2f            MSP_EXP432P401R_P4_2    //Right Motor
 #define Robot_MotorRIN2r            MSP_EXP432P401R_P4_4
 #define Robot_MotorLIN1f            MSP_EXP432P401R_P4_5
 #define Robot_MotorLIN1r            MSP_EXP432P401R_P4_7
-#define Robot_MotorLIN2f            MSP_EXP432P401R_P5_4
+#define Robot_MotorLIN2f            MSP_EXP432P401R_P5_4    //Left Motor
 #define Robot_MotorLIN2r            MSP_EXP432P401R_P5_5
 
 #define Robot_Sensor_ON				(1)

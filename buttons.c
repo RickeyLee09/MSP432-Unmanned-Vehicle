@@ -13,7 +13,10 @@ extern uint8_t state;
  */
 void gpioButtonFxn0(unsigned int index)
 {
-	state = 1;
+	state ++;
+//	if (state == 4){
+//	    state = 0;
+//	}
 }
 
 void gpioButtonFxn1(unsigned int index)
